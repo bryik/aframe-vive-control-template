@@ -2,7 +2,7 @@
 
 A Vive Control Template for [A-Frame](https://aframe.io).
 
-### In a Nut Shell
+### In a Nutshell
 
 1) 'npm install' to load dependencies
 
