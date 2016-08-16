@@ -61,14 +61,14 @@ AFRAME.registerComponent('custom-controls', {
    */
   addEventListeners: function () {
     var el = this.el;
-    el.addEventListener('gripdown', this.onGripDown.bind(this));
-    el.addEventListener('gripup', this.onGripUp.bind(this));
-    el.addEventListener('trackpaddown', this.onTrackpadDown.bind(this));
-    el.addEventListener('trackpadup', this.onTrackpadUp.bind(this));
-    el.addEventListener('triggerdown', this.onTriggerDown.bind(this));
-    el.addEventListener('triggerup', this.onTriggerUp.bind(this));
-    el.addEventListener('menudown', this.onMenuDown.bind(this));
-    el.addEventListener('menuup', this.onMenuUp.bind(this));
+    el.addEventListener('gripdown', this.onGripDown);
+    el.addEventListener('gripup', this.onGripUp);
+    el.addEventListener('trackpaddown', this.onTrackpadDown);
+    el.addEventListener('trackpadup', this.onTrackpadUp);
+    el.addEventListener('triggerdown', this.onTriggerDown);
+    el.addEventListener('triggerup', this.onTriggerUp);
+    el.addEventListener('menudown', this.onMenuDown);
+    el.addEventListener('menuup', this.onMenuUp);
   },
 
   removeEventListeners: function () {

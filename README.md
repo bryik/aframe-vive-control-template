@@ -31,3 +31,7 @@ Index.js contains the skeleton of a component. By default, it has no schema, upd
 It is wise to construct a simplified example during development. Once everything is working, use 'npm run dist' to export. The resulting JavaScript file can then be added to your project.
 
 For a finished example, see demo-controls.js in [A-Frame Dominoes](https://github.com/bryik/aframe-dominoes).
+
+### Maintaining Context
+
+You can use [".bind(this)"](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_objects/Function/bind) to maintain context with eventListeners. However, be aware that this complicates removal. See the [vive-cursor component](https://github.com/bryik/aframe-vive-cursor-component/blob/master/index.js#L75) for an example.

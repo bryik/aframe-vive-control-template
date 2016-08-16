@@ -4,12 +4,12 @@
     <script src="../build.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene antialias='true'>
       <a-assets></a-assets>
 
       <!-- Vive controllers -->
-      <a-entity custom-controls vive-controls="hand: left"></a-entity>
-      <a-entity custom-controls vive-controls="hand: right"></a-entity>
+      <a-entity id='left-controller' custom-controls vive-controls="hand: left"></a-entity>
+      <a-entity id='right-controller' custom-controls vive-controls="hand: right"></a-entity>
 
       <!-- Hello World boilerplate -->
       <a-entity position="0 0 -5">
